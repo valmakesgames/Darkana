@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -14,6 +13,8 @@ public class HelloWorld : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("Hello, beautiful world!");
+        
         GameObject cube = GameObject.Find("Cube");
         Debug.Log("Found object: " + cube);
 
@@ -33,7 +34,6 @@ public class HelloWorld : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Hello, beautiful world!");
         enterButton.onClick.AddListener(ButtonTest);
     }
 
