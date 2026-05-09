@@ -6273,28 +6273,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap_packed_281
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 24
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8dfb6e045dd9d146b9e8a082fd54645
-      internalID: 1527328884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: tilemap_packed_282
       rect:
         serializedVersion: 2
@@ -6801,13 +6779,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap_packed_305
+      name: truck-pink_top-view_facingUp
       rect:
         serializedVersion: 2
         x: 136
         y: 16
         width: 8
-        height: 8
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7747,7 +7725,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: truck_pink_top-view_01
+      name: truck-pink_top-view_facingDown
       rect:
         serializedVersion: 2
         x: 136
@@ -8150,7 +8128,6 @@ TextureImporter:
       tilemap_packed_302: 29372809
       tilemap_packed_303: -1367944830
       tilemap_packed_304: -1221155254
-      tilemap_packed_305: 949395256
       tilemap_packed_306: 1808205067
       tilemap_packed_307: -1303925544
       tilemap_packed_308: -892968199
@@ -8275,7 +8252,8 @@ TextureImporter:
       tilemap_packed_99: 147232106
       tree_brown-tall: -290044304
       tree_green-tall: -830371304
-      truck_pink_top-view_01: 2107028333
+      truck-pink_top-view_facingDown: 2107028333
+      truck-pink_top-view_facingUp: 949395256
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

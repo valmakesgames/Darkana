@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Driver
   steerSpeed: 1
-  moveSpeed: -0.05
+  moveSpeed: 0.05
 --- !u!212 &2051627264
 SpriteRenderer:
   serializedVersion: 2
@@ -292,7 +292,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2107028333, guid: 2e80bd64a402f3a459e2a585c9bcd34e, type: 3}
+  m_Sprite: {fileID: 949395256, guid: 2e80bd64a402f3a459e2a585c9bcd34e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
