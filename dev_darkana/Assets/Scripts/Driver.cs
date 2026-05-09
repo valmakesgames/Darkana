@@ -13,6 +13,10 @@ public class Driver : MonoBehaviour
         float move = 0;
         float steer = 0;
         
+        // isMoving bool to control tail lights
+        // anyKey pressed
+        
+        
         // WASD Movement/Steering
         if (Keyboard.current.wKey.isPressed) {
             move = 1f;
@@ -21,7 +25,7 @@ public class Driver : MonoBehaviour
             (Keyboard.current.sKey.isPressed) {
             move = -1f;
             Debug.Log("DOWN (S key pressed)");
-        } 
+        } // else SetActive HDR tail lights
         if (Keyboard.current.aKey.isPressed) { 
             steer = 1f;
             Debug.Log("LEFT (A key pressed)");
@@ -29,7 +33,7 @@ public class Driver : MonoBehaviour
             (Keyboard.current.dKey.isPressed) {
             steer = -1f;
             Debug.Log("RIGHT (D key pressed)");
-        }
+        } // else SetActive HDR tail lights
 
         float moveAmount = move * moveSpeed * Time.deltaTime;
         float steerAmount =  steer * steerSpeed * Time.deltaTime;
