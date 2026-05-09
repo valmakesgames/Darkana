@@ -5,37 +5,36 @@ using UnityEngine.InputSystem;
 public class Driver : MonoBehaviour
 {
     [SerializeField]
-    float steerSpeed;
-    [SerializeField]
     float moveSpeed;
-    
-    private void Start()
-    {
-        
-    }
+    [SerializeField]
+    float steerSpeed;
 
-    private void Update()
-    {
+    private void Update() {
+        float move = 0;
+        float steer = 0;
+        
         // WASD Movement/Steering
         if (Keyboard.current.wKey.isPressed) {
-            transform.Translate(0, moveSpeed, 0);
+            move = 1f;
             Debug.Log("FORWARD (W key pressed)");
         } else if 
-            (Keyboard.current.aKey.isPressed) {
-            transform.Rotate(0, 0, steerSpeed);
-            Debug.Log("LEFT (A key pressed)");
-        }
-
-        if (Keyboard.current.sKey.isPressed) {
-            transform.Translate(0, -moveSpeed, 0);
+            (Keyboard.current.sKey.isPressed) {
+            move = -1f;
             Debug.Log("DOWN (S key pressed)");
+        } 
+        if (Keyboard.current.aKey.isPressed) { 
+            steer = 1f;
+            Debug.Log("LEFT (A key pressed)");
         } else if 
             (Keyboard.current.dKey.isPressed) {
-            transform.Rotate(0, 0, -steerSpeed);
+            steer = -1f;
             Debug.Log("RIGHT (D key pressed)");
         }
+
+        float moveAmount = move * moveSpeed * Time.deltaTime;
+        float steerAmount =  steer * steerSpeed * Time.deltaTime;
         
-        // transform.Rotate(0, 0, steerSpeed);
-        // transform.Translate(0, moveSpeed, 0);
+        transform.Translate(0, moveAmount, 0);
+        transform.Rotate(0, 0, steerAmount);
     }
 }
