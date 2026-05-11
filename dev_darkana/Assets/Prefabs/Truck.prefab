@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8142251292169848542
 Transform:
   m_ObjectHideFlags: 0
@@ -140,6 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Driver
   moveSpeed: 10
   steerSpeed: 200
+  truckTailLights: {fileID: 1336684914737588140}
 --- !u!1001 &512527494711373399
 PrefabInstance:
   m_ObjectHideFlags: 0
