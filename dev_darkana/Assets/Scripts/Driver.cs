@@ -27,14 +27,14 @@ public class Driver : MonoBehaviour
         
         // WASD Movement/Steering
         if (Keyboard.current.wKey.isPressed) {
-            isMoving = true; 
-            Debug.Log("Tail lights OFF!")
+            isMoving = true;
+            Debug.Log("Tail lights OFF!");
             move = 1f;
             Debug.Log("FORWARD (W key pressed)");
         } else if
             (Keyboard.current.sKey.isPressed) {
             isMoving = true;
-            Debug.Log("Tail lights OFF!")
+            Debug.Log("Tail lights OFF!");
             move = -1f;
             Debug.Log("DOWN (S key pressed)");
         } 
