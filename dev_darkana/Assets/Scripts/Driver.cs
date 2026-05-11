@@ -10,13 +10,12 @@ public class Driver : MonoBehaviour
     float steerSpeed;
 
     [SerializeField]
-    private GameObject truckTailLights;
+    GameObject truckTailLights;
 
     private bool isMoving = false;
 
     void Awake() {
             truckTailLights.SetActive(true);
-            Debug.Log("Tail lights ON!");
     }
     
     void Update() {
@@ -28,26 +27,20 @@ public class Driver : MonoBehaviour
         // WASD Movement/Steering
         if (Keyboard.current.wKey.isPressed) {
             isMoving = true;
-            Debug.Log("Tail lights OFF!");
             move = 1f;
-            Debug.Log("FORWARD (W key pressed)");
         } else if
             (Keyboard.current.sKey.isPressed) {
             isMoving = true;
-            Debug.Log("Tail lights OFF!");
             move = -1f;
-            Debug.Log("DOWN (S key pressed)");
         } 
         
         if (Keyboard.current.aKey.isPressed) { 
             isMoving = true;
             steer = 1f;
-            Debug.Log("LEFT (A key pressed)");
         } else if 
             (Keyboard.current.dKey.isPressed) {
             isMoving = true;
             steer = -1f;
-            Debug.Log("RIGHT (D key pressed)");
         } 
         
         if (isMoving) {
