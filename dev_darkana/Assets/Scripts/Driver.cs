@@ -43,6 +43,9 @@ public class Driver : MonoBehaviour
             steer = -1f;
         } 
         
+        // Will this work?
+        // isMoving = (move != 0 || steer != 0)
+        
         if (isMoving) {
             truckTailLights.SetActive(false);
         } else {
