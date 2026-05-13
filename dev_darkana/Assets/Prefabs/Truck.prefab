@@ -43,9 +43,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5606141110930279776}
   - component: {fileID: 1892966898616885346}
-  - component: {fileID: 5644178764980584329}
   - component: {fileID: 432727846176248394}
   - component: {fileID: 1890426904860458269}
+  - component: {fileID: 5644178764980584329}
+  - component: {fileID: 342415076471334772}
   m_Layer: 0
   m_Name: Truck
   m_TagString: Untagged
@@ -128,21 +129,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &5644178764980584329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2159557976044342570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f33070fef30fbe24fbad33f86a3926bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Driver
-  moveSpeed: 10
-  steerSpeed: 200
-  truckTailLights: {fileID: 1336684914737588140}
 --- !u!61 &432727846176248394
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -216,6 +202,33 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5644178764980584329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2159557976044342570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f33070fef30fbe24fbad33f86a3926bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Driver
+  moveSpeed: 10
+  steerSpeed: 200
+  truckTailLights: {fileID: 1336684914737588140}
+--- !u!114 &342415076471334772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2159557976044342570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b756ef4b220831244912b9b2faba5605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collision
 --- !u!1001 &512527494711373399
 PrefabInstance:
   m_ObjectHideFlags: 0
